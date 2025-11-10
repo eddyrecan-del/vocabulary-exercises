@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Exercises - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e8ba3 100%);
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px),
+                linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px);
+            background-size: 40px 40px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            border-left: 6px solid #2a5298;
+            text-align: center;
+        }
+
+        .header h1 {
+            color: #1e3c72;
+            font-size: 2em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .header h2 {
+            color: #2a5298;
+            font-size: 1.4em;
+            margin-bottom: 8px;
+        }
+
+        .header h3 {
+            color: #555;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+        }
+
+        .header h4 {
+            color: #666;
+            font-size: 1em;
+        }
+
+        .toc-container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        .toc-title {
+            color: #1e3c72;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .toc-subtitle {
+            color: #666;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.05em;
+        }
+
+        .exercise-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border-left: 5px solid #2a5298;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: block;
+        }
+
+        .exercise-card:hover {
+            background: #e3f2fd;
+            transform: translateX(10px);
+            box-shadow: 0 4px 15px rgba(42, 82, 152, 0.2);
+        }
+
+        .exercise-number {
+            color: #2a5298;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .exercise-title {
+            color: #1e3c72;
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .exercise-description {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .exercise-details {
+            color: #666;
+            font-size: 0.95em;
+            font-style: italic;
+        }
+
+        .start-button {
+            display: inline-block;
+            background: #2a5298;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: all 0.3s;
+        }
+
+        .start-button:hover {
+            background: #1e3c72;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .header h1 { font-size: 1.5em; }
+            .header h2 { font-size: 1.2em; }
+            .toc-title { font-size: 1.5em; }
+            .toc-container { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Youth College</h1>
+            <h2>Language Centre</h2>
+            <h3>Vocational English 2D: Workplace Writing II</h3>
+            <h4>Vocabulary Building Exercises - AY2526</h4>
+        </div>
+
+        <div class="toc-container">
+            <h2 class="toc-title">📚 Choose Your Exercise</h2>
+            <p class="toc-subtitle">Select an exercise below to begin practising</p>
+
+            <a href="exercise1.html" class="exercise-card">
+                <div class="exercise-number">Exercise 1</div>
+                <div class="exercise-title">Drag and Drop - Word Usage by Part of Speech</div>
+                <div class="exercise-description">
+                    Drag vocabulary words to complete sentences in engineering workplace contexts. Practice identifying and using nouns, verbs, adjectives, and adverbs correctly.
+                </div>
+                <div class="exercise-details">
+                    39 sentences • All 40 vocabulary words • Interactive drag-and-drop
+                </div>
+                <span class="start-button">Start Exercise →</span>
+            </a>
+
+            <a href="exercise2.html" class="exercise-card">
+                <div class="exercise-number">Exercise 2</div>
+                <div class="exercise-title">Multiple Choice - Active vs Passive Voice</div>
+                <div class="exercise-description">
+                    Choose between active and passive voice forms of verbs. Learn when to use each voice in professional engineering writing.
+                </div>
+                <div class="exercise-details">
+                    10 questions • Focus on verbs • Instant feedback
+                </div>
+                <span class="start-button">Start Exercise →</span>
+            </a>
+
+            <a href="exercise3.html" class="exercise-card">
+                <div class="exercise-number">Exercise 3</div>
+                <div class="exercise-title">Multiple Choice - Verb Forms after Modals and Connectives</div>
+                <div class="exercise-description">
+                    Master the correct verb forms after modal verbs (can, should, must) and connectives (to, in order to, so as to). Essential grammar for technical writing.
+                </div>
+                <div class="exercise-details">
+                    12 questions • Modal verbs + Connectives • Score tracking
+                </div>
+                <span class="start-button">Start Exercise →</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
